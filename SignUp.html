@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+       color: white;
+    }
+    .container{
+        width: 400px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 100px;
+    }
+    h1{
+        color: black;
+        text-align: center;
+    }
+    input,label{
+        color: black;
+    }
+    .signup-box{
+        margin-bottom: 20px;
+    }
+    .signup-box label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .signup-box input{
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    .signup-box select{
+        width: 100%;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+
+     .signup-box input[type="submit"]{
+        background-color: black;
+      color: white;
+      cursor: pointer;
+     }
+     .signup-box input[type="submit"]:hover {
+        background-color: white;
+        color: black;
+     }
+</style>
+<body>
+    <div class="container">
+        <h1>SignUp</h1>
+        <form>
+            <div class="signup-box">
+                <label for="name">Name:</label>
+                 <input type="Name" name="Name" required>
+             </div>
+             <div class="signup-box">
+                <label for="Batch">Batch:</label>
+              <select name="Batch" id="Form">
+                <option value="Sigma 1.0">Sigma 1.0</option>
+                <option value="Sigma 2.0">Sigma 2.0</option>
+               </select>
+             </div>
+             <div class="signup-box">
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" required>
+             </div>
+             <div class="signup-box">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+             </div>
+             <div class="signup-box">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" required>
+             </div>
+             <div class="signup-box">
+                <input type="Submit" value="SignUp">
+             </div>
+        </form> 
+    </div>
+</body>
+</html>
